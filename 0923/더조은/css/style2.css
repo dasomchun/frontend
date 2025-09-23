@@ -1,0 +1,114 @@
+*{margin: 0; padding: 0;}
+ul li{list-style: none;}
+a{color: #000; text-decoration: none;}
+.header_out{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin:0 auto;
+    z-index: 5;
+    }
+.header{
+    width: 1200px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 0 auto;
+    z-index: 5;
+}
+.sns img{
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.sns ul li{
+    float: left;
+    margin-left: 15px ;
+}   
+
+ .logo{
+    width: 350px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%)
+ }
+ .logo img{
+    display: block;
+    width: 100%;
+    height: 100%;}
+.lnb{
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.lnb>li{
+    float: left;
+    padding: 0 10px;;
+}
+.main_menu{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: yellow;
+    top: 220px;
+    left:0;
+}
+
+.main_menu>ul{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    background-color: #333;
+}
+
+.main_menu > ul >li{
+    float: left;
+    text-align: center;
+}
+
+.main_menu ul li a{
+    display: block;
+    width: 240px;
+    height:30px;
+    line-height: 30px;
+    color: white;
+    background-color: #333;
+}
+
+.main_menu ul li ul{
+    position: absolute;
+    background-color: yellow;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.main_menu ul:hover li ul{
+    height: 90px;
+}
+.main_menu ul li ul li a{
+    background-color: gray;
+}
+.shadow{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: black;
+    height: 0;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.main_menu ul:hover + .shadow{
+    height:90px;
+    border-bottom: 1px solid black;
+}
+
+.main1 img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
