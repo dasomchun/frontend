@@ -498,4 +498,55 @@ header .gnb{
     height: 254px;
     padding-top: 100px;
 }
-    
+
+.s5_left img{
+    margin-bottom: 23px;
+}
+
+.s5_table{
+    margin-top: 50px;
+}
+
+.s5_table li a{
+     display: block;
+    width: 116px;
+    height: 35px;
+    color: white;
+    background-color: #000;
+    line-height: 35px;
+    margin-left: 190px;
+    border-radius: 20px ;
+}
+
+.s5_table li:hover a{
+    background-color: white;
+    color: black;
+    border: 1px solid #333;
+}
+
+.s5_left img, .s5_left h2, .s5_left p{
+    visibility: hidden;
+}
+
+.s5_left img.slide1, .s5_left h2.slide1, .s5_left p.slide1{
+    visibility: visible;
+    animation: slide 1s;
+}
+@keyframes slide1{
+    0%{
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.s5_apply{
+    visibility: hidden;
+}
+
+.s5_apply.slide1{
+    visibility: visible;
+    animation: slide 1s;
+}
