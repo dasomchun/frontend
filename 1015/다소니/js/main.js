@@ -129,32 +129,33 @@ $(function(){
                 },900);
             }
         });
-         let d1 = $(".s5_left img").offset().right;
-        // 이미지
-        let d2 = $(".s5_left h2").offset().right;
-        // 제목
-        let d3 = $(".s5_left p").offset().right;
-        // 내용
-        let d4 = $(".s5_apply").offset().right;
-        // console.log(c1,c2,c3,c4);
+        
+        let d1 = $(".s5_left").offset().left;
+       
 
         $(window).scroll(function(){
-            let sct = $(this).scrollRight();
-            if(d1 <=sct + 700){
-                $(".s5_left img").addClass("slide1").right;
-            }
-            if(d2 <=sct + 700){
-                $(".s5_left h2").addClass("slide1").right;
-            }
-            if(d3 <=sct + 700){
-                $(".s5_left p").addClass("slide1").right;
-            }
-            if(d4 < sct + 700){
-                $(".s5_apply").addClass("slide1").right;
-                
-            }
+            let sct = $(this).scrollLeft();
+            if(d1 <=sct +700){
+                 $(".s5_left").addClass("slide1")
+            }           
         });
-        
 
+        let d2 = $(".s6_main").offset().left;
+       
 
+        $(window).scroll(function(){
+            let sct = $(this).scrollLeft();
+            if(d1 <=sct +700){
+                 $(".s6_main").addClass("slide1")
+            }           
+        });
+
+        let d3 = $("#float_div").offset().top;
+
+        $(window).scroll(function(){
+            let sct = $(this).scrollTop();
+            $("#float_div").stop().animate({top:d3+sct},500);
+            
+        });
 });
+
