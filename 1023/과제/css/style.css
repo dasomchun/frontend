@@ -1,0 +1,158 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav-link {
+  color: black;
+}
+
+.navbar-collapse ul {
+  margin-right: 30px;
+}
+
+.btn-sm:nth-child(1) {
+  border: 1px solid #333;
+  border-radius: 0;
+  width: 70px;
+  height: 40px;
+}
+.btn-sm:nth-child(2) {
+  border-radius: 0;
+  width: 100px;
+  color: white;
+  background-color: black;
+  height: 40px;
+}
+
+#carouselExampleSlidesOnly {
+  margin-top: 70px;
+  height: 350px;
+}
+
+.carousel-item img {
+  height: 350px;
+}
+
+.row {
+  margin-left: 100px;
+}
+
+.col-6 {
+  width: 700px;
+  height: 500px;
+  margin-left: 100px;
+  text-align: justify;
+}
+
+.col-6 h5,
+h2 {
+  font-weight: bold;
+}
+
+.col-6:nth-child(1) {
+  margin-top: 150px;
+}
+
+.col-6:nth-child(2) img {
+  width: 680px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.cardtitle {
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.cardtitle h5,
+h2 {
+  font-weight: bold;
+}
+.cardall {
+  margin-right: 130px;
+}
+
+.card img {
+  height: 350px;
+}
+
+.textpart {
+  margin-top: 250px;
+}
+
+.textpart h4 {
+  font-weight: bold;
+}
+
+.textimage {
+  display: flex;
+  width: 500px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.textimage1 {
+  width: 250px;
+  height: 60px;
+  border-right: 1px solid #333;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 50px;
+  background: url(../img/c1.jpg) no-repeat -10% 50%;
+}
+
+.textimage1 h5 {
+  font-weight: bold;
+}
+.textimage2 h4 {
+  font-weight: bold;
+}
+
+.textimage2 {
+  width: 250px;
+  height: 60px;
+  text-align: left;
+  margin-top: 7px;
+  padding-left: 55px;
+  background: url(../img/c2.jpg) no-repeat 4% 0%;
+}
+
+.maptitle {
+  margin-left: 200px;
+  padding-top: 200px;
+  margin-bottom: -100px;
+}
+.maptitle h5 {
+  font-weight: bold;
+}
+
+.maptext {
+  margin-left: 130px;
+  width: 390px;
+  height: 500px;
+}
+.maptext h4 {
+  font-weight: bold;
+}
+.map {
+  margin-bottom: 45px;
+  border-left: 1px solid #333;
+}
+
+.map2,
+.map3 {
+  border: none;
+}
+
+.map,
+h4,
+p,
+a {
+  margin-left: 20px;
+}
+
+.mapimg {
+  margin-top: 100px;
+}
