@@ -1,7 +1,8 @@
+li{list-style: none;}
 a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  
 }
 .nav-link {
   color: black;
@@ -78,7 +79,7 @@ h2 {
 }
 
 .textpart {
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .textpart h4 {
@@ -90,7 +91,7 @@ h2 {
   width: 500px;
   height: 60px;
   margin: 0 auto;
-  padding-top: 20px;
+  
 }
 
 .textimage1 {
@@ -100,7 +101,7 @@ h2 {
   font-size: 14px;
   text-align: center;
   padding-left: 50px;
-  background: url(../img/c1.jpg) no-repeat -10% 50%;
+  background: url(../img/c1.jpg) no-repeat -9% 50%;
 }
 
 .textimage1 h5 {
@@ -121,7 +122,7 @@ h2 {
 
 .maptitle {
   margin-left: 200px;
-  padding-top: 200px;
+  padding-top: 180px;
   margin-bottom: -100px;
 }
 .maptitle h5 {
@@ -155,4 +156,89 @@ a {
 
 .mapimg {
   margin-top: 100px;
+}
+
+section{
+  margin-left: 100px;
+}
+
+section h4{
+  font-weight: bold;
+}
+
+.form-control{
+  border: 1px solid #333;
+  border-radius: 0;
+  margin-top: 20px;
+  width: 350px;
+}
+
+.butt{
+  margin: -157px 0 0 360px;
+  border: 1px solid #333;
+  border-radius: 0;
+}
+.butt:hover{
+  background-color: aqua;
+  color: white;
+}
+
+.submenu{
+  width:600px;
+  height: 200px;
+  display: flex;
+  margin-left: 10px;
+}
+#emailHelp span{
+  text-decoration-line: underline;
+}
+.submenu ul{
+  width: 180px;
+  height: 50px;
+  margin-left: 10px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.submenu ul li{
+  line-height: 30px;
+  margin-left: -20px;
+}
+
+.submenu ul:nth-child(3) li{
+  margin-left: 0px;
+}
+
+.submenu ul:nth-child(3) li:nth-child(1){
+  background: url(../img/facebook.svg) no-repeat 0% 50%;
+}
+.submenu ul:nth-child(3) li:nth-child(2){
+  background: url(../img/instagram.svg) no-repeat 0% 50%;
+}
+.submenu ul:nth-child(3) li:nth-child(3){
+  background: url(../img/twitter-x.svg) no-repeat 0% 50%;
+}
+.submenu ul:nth-child(3) li:nth-child(4){
+  background: url(../img/linkedin.svg) no-repeat 0% 50%;
+}
+.submenu ul:nth-child(3) li:nth-child(5){
+  background: url(../img/youtube.svg) no-repeat 0% 50%;
+}
+
+footer{
+  border-top:1px solid #333;
+  width: 1200px;
+  height: 100px;
+  margin-left: 200px;
+}
+.foot{
+  margin:-40px 0 0 700px;
+}
+
+.foot li{
+  float: left;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 20px;
+
 }
