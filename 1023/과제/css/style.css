@@ -1,8 +1,9 @@
-li{list-style: none;}
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
   color: black;
-  
 }
 .nav-link {
   color: black;
@@ -20,10 +21,16 @@ a {
 }
 .btn-sm:nth-child(2) {
   border-radius: 0;
+  border: 1px solid #333;
   width: 100px;
   color: white;
   background-color: black;
   height: 40px;
+}
+
+.btn-sm:hover {
+  background-color: aqua;
+  color: white;
 }
 
 #carouselExampleSlidesOnly {
@@ -91,7 +98,6 @@ h2 {
   width: 500px;
   height: 60px;
   margin: 0 auto;
-  
 }
 
 .textimage1 {
@@ -156,104 +162,113 @@ a {
 
 .mapimg {
   margin-top: 100px;
+  margin-left: 200px;
 }
 
-section{
+section {
   margin-left: 100px;
 }
 
-section h4{
+section h4 {
   font-weight: bold;
 }
 
-.form-control{
+.form-control {
   border: 1px solid #333;
   border-radius: 0;
   margin-top: 20px;
-  width: 350px;
+  width: 450px;
 }
 
-.butt{
-  margin: -157px 0 0 360px;
+.butt {
+  margin: -157px 0 0 460px;
   border: 1px solid #333;
   border-radius: 0;
 }
-.butt:hover{
+.butt:hover {
   background-color: aqua;
   color: white;
 }
 
-.submenu{
-  width:600px;
+.submenu {
+  width: 600px;
   height: 200px;
   display: flex;
-  margin-left: 10px;
+  margin-left: 130px;
 }
-#emailHelp span{
+#emailHelp span {
   text-decoration-line: underline;
 }
-.submenu ul{
+.submenu ul {
   width: 180px;
   height: 50px;
-  margin-left: 10px;
+  margin-left: 60px;
   line-height: 50px;
   font-weight: bold;
 }
 
-.submenu ul li{
+.submenu ul li {
   line-height: 30px;
   margin-left: -20px;
 }
 
-.submenu ul:nth-child(3) li{
+.submenu ul:nth-child(3) li {
   margin-left: 0px;
 }
 
-.submenu ul:nth-child(3) li:nth-child(1){
+.submenu ul:nth-child(3) li:nth-child(1) {
   background: url(../img/facebook.svg) no-repeat 0% 50%;
 }
-.submenu ul:nth-child(3) li:nth-child(2){
+.submenu ul:nth-child(3) li:nth-child(2) {
   background: url(../img/instagram.svg) no-repeat 0% 50%;
 }
-.submenu ul:nth-child(3) li:nth-child(3){
+.submenu ul:nth-child(3) li:nth-child(3) {
   background: url(../img/twitter-x.svg) no-repeat 0% 50%;
 }
-.submenu ul:nth-child(3) li:nth-child(4){
+.submenu ul:nth-child(3) li:nth-child(4) {
   background: url(../img/linkedin.svg) no-repeat 0% 50%;
 }
-.submenu ul:nth-child(3) li:nth-child(5){
+.submenu ul:nth-child(3) li:nth-child(5) {
   background: url(../img/youtube.svg) no-repeat 0% 50%;
 }
 
-footer{
-  border-top:1px solid #333;
-  width: 1200px;
+footer {
+  border-top: 1px solid #333;
+  width: 1800px;
   height: 100px;
-  margin-left: 200px;
+  margin-left: 50px;
 }
-.foot{
-  margin:-40px 0 0 700px;
+.foot {
+  margin: -40px 0 0 1100px;
 }
 
-.foot li{
+.foot li {
   float: left;
   text-decoration: underline;
   font-weight: bold;
   margin-left: 20px;
-
 }
 
-.slideanim{
+.slideanim {
   visibility: hidden;
-} 
+}
 
-.slide{
+.slide {
   animation: slide 1s;
   visibility: visible;
 }
 
-@keyframes slide{
-  0%{opacity: 0; transform: translateY(70%);}
-  100%{opacity: 1; transform: rotateY(0);}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
 }
 
+footer p {
+  margin-left: 150px;
+}
