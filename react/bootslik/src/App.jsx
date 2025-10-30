@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import Slider from "react-slick";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
-import SwiperSlideComponent from "./pages/Swiperslide";
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);

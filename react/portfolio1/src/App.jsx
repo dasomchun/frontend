@@ -34,18 +34,26 @@ export default function App() {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       const scrolloPosition = window.pageYOffset + window.innerHeight / 3;
+      // window.pageYOffest(수직스크롤 위치) + 화면높이 1/3 = 화면상단에서 3분의 1위치를 감지기준
       sections.forEach((section, index) => {
-        const top = section.offsetTop;
+        const top = section.offsetTop; //현재 순회중인 섹션의 시작
         const bottom = top + section.offsetHeight;
-
+        //scrolloPosition (감지위치)가 현재 순회중인 섹션의 시작과 끝 사이에 있는 경우 if문을 실행
         if (scrolloPosition >= top && scrolloPosition < bottom) {
           setActiveSection(index);
+          // 조건이 참이면 해당섹션의 (index) 값으로 activeSection 상태를 업데이트
         }
       });
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+    // 메모리 누수방지
   }, []);
+
+  // 컴포넌트 화면에 나타난후 , 사용자가 스크롤 할때 마다 모든 .section 요소를 검사하여
+  // 화면에 상단 1/3 지점에 걸쳐 있는 섹션이 무엇인지 확인하고 그 섹션의 인덱스를
+  // activeSection의 상태 저장해라
+  // 이 activeSection 상태를 사용하여 내비게이션 메뉴의 스타일을 동적으로 변경할 수 있다.
 
   return (
     <div className="app">

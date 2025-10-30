@@ -1,17 +1,22 @@
 import React from "react";
+import Slider from "react-slick";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./App.css";
+import SwiperSlideComponent from "./pages/Swiperslide";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Slides from "./pages/Slides";
 
 export default function Home() {
   return (
     <>
       <div className="home">
         {/* <div className="images">
-        <img src="./images/s1.jpg" alt="" />
-        <img src="./images/s2.jpg" alt="" />
-        <img src="./images/s3.jpg" alt="" />
-      </div> */}
+          <img src="./images/s1.jpg" alt="" />
+          <img src="./images/s2.jpg" alt="" />
+          <img src="./images/s3.jpg" alt="" />
+        </div> */}
         <h1>홈 페이지</h1>
         <p>
           React Router를 사용한 다중 페이지 애플리케이션에 오신 것을 환영합니다!
@@ -36,7 +41,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <Slides />
+      <Swiperslide />
     </>
   );
 }
