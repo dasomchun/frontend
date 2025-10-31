@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { FiDownload, FiChevronDown } from "react-icons/fi";
+import { FiDownload, FiChevronUp } from "react-icons/fi";
 import { Routes, Route, Link } from "react-router-dom";
 import "./hero.css";
 // https://react-icons.github.io/react-icons/
@@ -67,8 +67,8 @@ export default function Hero() {
         {/* Scroll indicator */}
         <div className="scroll-indicator">
           <div className="scroll-content">
-            <span className="scroll-text">Scroll down</span>
-            <FiChevronDown size={24} />
+            <span className="scroll-text">Click Button</span>
+            <FiChevronUp size={24} />
           </div>
         </div>
       </div>
