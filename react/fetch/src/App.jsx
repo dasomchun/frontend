@@ -48,7 +48,10 @@ export default function App() {
       <header style={styles.header}>
         <h1 style={styles.title}>사용자 목록</h1>
 
-        <button style={styles.refreshButton}> 🔄 새로고침</button>
+        <button style={styles.refreshButton} onClick={handleRefresh}>
+          {" "}
+          🔄 새로고침
+        </button>
       </header>
       {/* 로딩상태 */}
       {loading && (

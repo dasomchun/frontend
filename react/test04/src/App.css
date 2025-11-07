@@ -1,0 +1,131 @@
+.container {
+  position: relative;
+  margin: 100px 0 0 600px;
+}
+
+.formsection {
+  background-color: white;
+  width: 530px;
+  height: 780px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formsection h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.formmenu {
+  margin: 50px 0 0 40px;
+}
+
+.email-section label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  display: flex;
+}
+
+.email-section input {
+  padding: 10px;
+  margin-top: 5px;
+  width: 400px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+.passwordcon {
+  margin-top: 20px;
+}
+.passwordcon label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.passwordsection input {
+  padding: 10px;
+  margin-top: 5px;
+  width: 200px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+input:hover {
+  border: 1px solid #333;
+}
+
+.passwordsection button {
+  position: absolute;
+  margin: -30px 0 0 380px;
+  border: none;
+}
+
+.repasscon {
+  margin-top: 20px;
+}
+.repasscon label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.repasection input {
+  padding: 10px;
+  margin-top: 5px;
+  width: 200px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+.namecon {
+  margin-top: 20px;
+}
+.namecon label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.namesection input {
+  padding: 10px;
+  margin-top: 5px;
+  width: 200px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+.phonecon {
+  margin-top: 20px;
+}
+.phonecon label {
+  font-size: 20px;
+  font-weight: bold;
+}
+.phonecon input {
+  padding: 10px;
+  margin-top: 5px;
+  width: 200px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+.btn {
+  margin: 40px 0 0 0px;
+  width: 430px;
+  height: 50px;
+  background-color: rgb(222, 222, 222);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: aquamarine;
+  border: 1px solid #333;
+}

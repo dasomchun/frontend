@@ -1,0 +1,24 @@
+.Todoitem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Todoitem .titlechk {
+  flex: 1;
+}
+
+.Todoitem .datechk {
+  font-size: 14px;
+  margin-right: 0px;
+  color: gray;
+}
+
+.Todoitem .btnchk button {
+  background-color: aqua;
+  width: 45px;
+  margin-right: 5px;
+  color: gray;
+  border: none;
+}

@@ -1,0 +1,68 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header button {
+  background-color: #007bff;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.container .loadp {
+  margin-left: 550px;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+}
+
+.userid {
+  cursor: pointer;
+  width: 280px;
+  height: 180px;
+  border: 1px solid rgb(222, 222, 222);
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userid:hover {
+  border: 1px solid #007bff;
+}
+
+.userat {
+  text-align: center;
+  margin: 20px 0 0 110px;
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+}
+
+.user1 {
+  margin: 20px 0 50px 0;
+}
+.user1 h3 {
+  font-weight: 600;
+}
+
+.user1 p {
+  color: gray;
+}

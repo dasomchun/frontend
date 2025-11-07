@@ -1,0 +1,27 @@
+.todoenter .form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.todoenter h3 {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.todoenter input {
+  margin-left: 10px;
+  width: 380px;
+  padding: 15px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1f93ff;
+  color: white;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+}
