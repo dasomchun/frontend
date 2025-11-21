@@ -5,27 +5,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: rgb(235, 235, 235);
-}
-.blob {
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.5;
-  mix-blend-mode: multiply;
-}
-.blob-1 {
-  top: -10rem;
-  left: -10rem;
-  background: skyblue;
-}
-
-.blob-2 {
-  bottom: -10rem;
-  right: -10rem;
-  background: #333;
+  background: #0eb4fc;
 }
 
 .home-content {
@@ -35,32 +15,23 @@
 }
 
 .greeting-text {
-  color: #666;
+  color: white;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 .home-name {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(to right, #3b82f6, navy, #333);
+  background: linear-gradient(to right, white, pink, purple);
   -webkit-background-clip: text;
   background-clip: text;
   animation: bounce 2s infinite;
   -webkit-text-fill-color: transparent;
 }
-@media (min-width: 768px) {
-  .home-name {
-    font-size: 4.5rem;
-  }
-}
 
-@media (min-width: 768px) {
-  .home-title {
-    font-size: 2.25rem;
-  }
-}
 .home-description {
-  color: #666;
+  color: white;
+  font-weight: bold;
   margin-bottom: 2rem;
   font-size: 2rem;
   max-width: 36rem;
@@ -68,24 +39,19 @@
   margin-right: auto;
 }
 
-@media (min-width: 640px) {
-  .home-buttons {
-    flex-direction: row;
-  }
-}
 .btn-primary {
   padding: 0.75rem 2rem;
-  background-color: black;
+  background-color: white;
   border-radius: 0.5rem;
   font-weight: 500;
   border: 1px solid #333;
   cursor: pointer;
   transition: all 0.3s;
-  color: white;
+  color: #0eb4fc;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 5px 30px rgba(0, 85, 247, 0.5);
+  box-shadow: 0 5px 20px black;
   transform: scale(1.1);
 }
 
@@ -95,6 +61,6 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
 }

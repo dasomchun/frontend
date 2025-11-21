@@ -1,0 +1,129 @@
+#portfolio3 {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #0eb4fc;
+  background: #0eb4fc;
+}
+
+header h3 {
+  font-size: 30px;
+  color: white;
+  margin-left: 30px;
+}
+
+.port3-title h3 {
+  position: absolute;
+  top: 13%;
+  left: 40%;
+  font-size: 22px;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  background-color: #0eb4fc;
+  color: white;
+  border-radius: 50px;
+}
+.port3-images {
+  margin: 100px 0 0 40px;
+  width: 600px;
+  height: 350px;
+  transition: 0.3s all;
+}
+
+.port3-images a img {
+  width: 100%;
+  height: 100%;
+}
+
+.port3-explan p {
+  margin: 130px 0 0 120px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.port3-date {
+  margin-top: 40px;
+  position: absolute;
+  height: 30px;
+  display: flex;
+  gap: 100px;
+  top: 35%;
+  left: 40%;
+}
+
+.port3-date h3 {
+  font-size: 22px;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #0eb4fc;
+  border-radius: 50px;
+  padding: 0 10px;
+  margin-top: 0px;
+  text-align: center;
+  color: white;
+}
+
+.port3-date h3:first-child {
+  width: 105px;
+  padding: 0 10px;
+}
+
+.port3-date p {
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.port3-result {
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
+
+.port3-result h3 {
+  font-size: 22px;
+  width: 50px;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #0eb4fc;
+  color: white;
+  border-radius: 50px;
+}
+
+.port3-result p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 35px 0 0 10px;
+}
+
+.port3-tool {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+}
+
+.port3-tool h3 {
+  width: 80px;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50px;
+  color: white;
+  background-color: #0eb4fc;
+}
+
+.port3-skill {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  gap: 100px;
+}

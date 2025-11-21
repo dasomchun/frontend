@@ -32,7 +32,7 @@ export default function About() {
   ];
 
   const getProgressWidth = (index) => {
-    const percentage = [95, 90, 85, 88, 82, 80, 92];
+    const percentage = [95, 95, 90, 88, 82, 85, 92];
     return percentage[index] || 80;
   };
   return (

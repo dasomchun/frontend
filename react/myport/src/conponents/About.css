@@ -21,14 +21,14 @@ header h2 {
   margin-top: 30px;
   width: 23%;
   height: 600px;
-  border-right: 3px solid #333;
+  /* border-right: 1px solid skyblue; */
 }
 
 .picture {
   width: 350px;
   height: 550px;
   margin-left: 30px;
-  box-shadow: 5px 5px 5px gray;
+  box-shadow: 5px 5px 5px skyblue;
 }
 
 .picture img {
@@ -56,6 +56,7 @@ header h2 {
 .education h3 {
   width: 160px;
   height: 30px;
+  line-height: 30px;
   background-color: skyblue;
   border-radius: 25px;
   color: white;
@@ -75,12 +76,13 @@ header h2 {
 }
 .experience {
   width: 1400px;
-  border-top: 3px solid #333;
+  border-top: 5px solid skyblue;
   display: flex;
   margin-left: 50px;
 }
 .experience h3 {
   width: 170px;
+  line-height: 30px;
   height: 30px;
   background-color: skyblue;
   border-radius: 25px;
@@ -102,13 +104,14 @@ header h2 {
 
 .license {
   width: 1400px;
-  border-top: 3px solid #333;
+  border-top: 1px solid #333;
   margin: 40px 0 0 50px;
   display: flex;
 }
 .license h3 {
   width: 160px;
   height: 30px;
+  line-height: 30px;
   background-color: skyblue;
   border-radius: 25px;
   color: white;
@@ -150,18 +153,19 @@ header h2 {
 .skill-section header h3 {
   color: white;
   margin: 0 0 0 25px;
+  line-height: 30px;
 }
 .skills-section {
   padding: 5rem 1rem;
   background: #111827;
 }
 .skill-category-card {
-  margin: 20px 0 0 150px;
+  margin: 25px 0 0 150px;
   padding: 20px;
   height: 300px;
   background: white;
   border-radius: 0.5rem;
-  border: 3px solid white;
+
   transition: all 0.3s;
   color: black;
 }

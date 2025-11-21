@@ -1,3 +1,4 @@
+import React from "react";
 const SERVICE_LABELS = ["AD Service", "AD Platform", "AD Tech", "AD Study"];
 
 const SERVICE_DETAILS = [
@@ -12,7 +13,6 @@ const SERVICE_DETAILS = [
   ],
   ["Research", "Consulting"],
 ];
-
 export default function SectionThree() {
   return (
     <section id="section3" className="section">
@@ -41,6 +41,7 @@ export default function SectionThree() {
             </li>
           </ul>
         </div>
+
         <div className="section3-txt">
           <ul className="cf">
             {SERVICE_LABELS.map((label) => (
@@ -55,7 +56,7 @@ export default function SectionThree() {
                 <ul>
                   {group.map((item) => (
                     <li key={item}>
-                      <a href="">{item}</a>
+                      <a href="#">{item}</a>
                     </li>
                   ))}
                 </ul>

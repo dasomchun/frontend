@@ -1,6 +1,6 @@
 import insightsImg from "../assets/img/insights.jpg";
 
-export default function SectionFour() {
+export default function Sectionfour() {
   return (
     <section id="section4" className="section">
       <div className="section4-cover">
