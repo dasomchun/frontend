@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+:root {
+  --blue-main: #007acc;
+  --blue-light: #00b4d8;
+  --text-dark: #1e1e1e;
+  --text-gray: #555;
+  --bg-light: #ffffff;
+}
+
+/* 전체 설정 */
+body {
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* ===== 헤더 ===== */
+.introduce {
+  background: var(--blue-main);
+  color: white;
+  text-align: center;
+  padding: 1.8rem 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 1650px;
+}
+
+.profile-card {
+  margin-top: -10px;
+  width: 340px;
+  min-height: 560px;
+  background: linear-gradient(to bottom right, #ffffff, #f8fbff);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 122, 204, 0.15);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 1.5rem;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(0, 122, 204, 0.08);
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 122, 204, 0.25);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 3px solid var(--blue-main);
+  transition: transform 0.5s ease;
+}
+
+.profile-card:hover .profile-img {
+  transform: scale(1.05);
+}
+
+.profile-name-section {
+  padding: 1rem 0 0.8rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.profile-card h2 {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: var(--blue-main);
+  margin: 0.5rem 0 0.3rem;
+  letter-spacing: 0.4px;
+}
+
+.profile-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* 연락처 섹션 */
+.profile-info {
+  padding-top: 0.8rem;
+}
+
+.profile-info p {
+  margin: 1rem 0;
+  font-weight: 900;
+  color: var(--text-gray);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.profile-info p:hover {
+  color: var(--blue-main);
+}
+
+.profile-info p svg {
+  color: var(--blue-main);
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.profile-info p:hover svg {
+  transform: scale(1.2);
+}
+
+/* 하단 장식 라인 */
+.profile-divider {
+  width: 50%;
+  height: 3px;
+  background: var(--blue-main);
+  border-radius: 9999px;
+  margin: 1.2rem auto 0.8rem;
+  opacity: 0.8;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.5rem;
+  align-items: stretch;
+}
+
+.info-block {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.3rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  height: 100%; /* ✅ grid 셀을 꽉 채우게 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-block h3 {
+  background: var(--blue-main);
+  color: white;
+  display: inline-block;
+  padding: 0.35em 0.8em;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
+}
+
+.info-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.info-block ul li {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.info-block ul li span {
+  font-size: 1.2rem;
+  margin-right: 30px;
+  color: #007acc;
+  font-weight: 700;
+}
+
+/* ===== Skill ===== */
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.35rem;
+}
+
+.skill-icon-name {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  gap: 0.3rem;
+  width: 90px;
+}
+
+.skill-icon {
+  font-size: 0.85rem;
+  color: var(--blue-main);
+}
+
+.skill-bar-track {
+  flex: 1;
+  height: 5px;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: var(--blue-main);
+  border-radius: 9999px;
+  transition: width 0.6s ease-out;
+}
+
+.skill-percent {
+  font-size: 1rem;
+  width: 35px;
+  text-align: right;
+  color: var(--text-gray);
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+
+  .profile-card {
+    width: 90%;
+  }
+}

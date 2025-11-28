@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 500px;
+  width: 100%;
+  padding: 150px 0;
+  margin-left: 650px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

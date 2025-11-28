@@ -1,0 +1,203 @@
+#project1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
+  background: white;
+  padding-bottom: 5rem;
+}
+
+.portfolio1-header {
+  position: relative;
+  width: 100%;
+  background: var(--blue-main);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem 2rem;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: -40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.port1-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 4rem 2rem;
+  align-items: start;
+}
+
+.port1-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.left-image {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.port1-images a:nth-child(1) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.port1-images a:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.port1-images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: grayscale(100%);
+}
+
+.port1-images img:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+}
+
+.port1-info {
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  color: var(--text-dark);
+}
+
+.port1-number {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--blue-main);
+}
+
+.port1-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+.port1-tools {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.port1-tools span {
+  display: inline-block;
+  border: 2px solid var(--blue-main);
+  color: var(--blue-main);
+  border-radius: 50px;
+  padding: 0.3rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.port1-tools span:hover {
+  background: var(--blue-main);
+  color: white;
+}
+
+.port1-desc {
+  color: #333;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.port1-stats {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.port1-stat h4 {
+  color: var(--blue-main);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+}
+
+.port1-stat p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.port1-stats .port1-stat:last-child p {
+  white-space: normal;
+}
+
+/* 결과 */
+.port1-result h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--blue-main);
+  margin-bottom: 0.5rem;
+}
+
+.port1-result p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* 버튼 */
+.port1-buttons {
+  margin-top: 2.5rem;
+}
+
+.btn-primary {
+  background: var(--blue-main);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--blue-light);
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .port1-container {
+    grid-template-columns: 1fr;
+  }
+
+  .port1-images {
+    grid-template-columns: 1fr;
+  }
+
+  .port1-images img {
+    height: 200px;
+  }
+}

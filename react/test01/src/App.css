@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: 40%;
+  top: 250px;
+  background-color: rgb(222, 222, 222);
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.count {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 50px 0 0 240px;
+}
+.container .btngroup {
+  margin: 20px 0 0 160px;
+  display: flex;
+  gap: 5px;
+}
+
+.blue-col {
+  color: blue;
+}
+
+.red-col {
+  color: red;
+}
+
+.black-col {
+  color: black;
+}
+
+.btngroup button {
+  margin: 0 0px;
+  padding: 10px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btngroup button:nth-child(3) {
+  background-color: gray;
+}
+.btngroup button:hover {
+  border: 1px solid #333;
+  background-color: #0056b3;
+}
+.btngroup button:nth-child(3):hover {
+  background-color: #333;
+}

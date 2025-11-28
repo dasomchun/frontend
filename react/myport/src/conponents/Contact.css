@@ -1,0 +1,161 @@
+#contact {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
+}
+
+.contact-header {
+  background: var(--blue-main);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 1rem 2rem;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: -40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  height: calc(100vh - 150px);
+  padding: 2rem;
+  align-items: center;
+}
+
+.contact-left h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--blue-main);
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+/* ===== 연락 카드 ===== */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8f9fb;
+  border-radius: 10px;
+  padding: 0.8rem 1.3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 122, 204, 0.2);
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  color: var(--blue-main);
+}
+
+.contact-card p,
+.contact-card a {
+  font-size: 1rem;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+/* ===== 오른쪽 폼 ===== */
+.contact-form {
+  background: #f9fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--blue-main);
+}
+
+input,
+textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--blue-main);
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-send {
+  margin-top: 1rem;
+  background: var(--blue-main);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.btn-send:hover {
+  background: var(--blue-light);
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 1000px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-card {
+    justify-content: center;
+  }
+}
