@@ -1,0 +1,7 @@
+http://api.openweathermap.org/data/2.5/forecast?id=1835848&appid=6ce68ece17a19c8eb35e586f266d0bbd		
+&units=metric
+
+524901 도시코드
+https://openweathermap.org/city/1835848 서울도시코드
+
+http://api.openweathermap.org/data/2.5/weather?id=1897007&appid=6ce68ece17a19c8eb35e586f266d0bbd&units=metric

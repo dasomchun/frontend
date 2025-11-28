@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{margin: 0; padding: 0;}
+ul, li{list-style:none;} 
+body{background-color: #333;}
+#wrap{
+    width: 640px;
+    margin:100px  auto 0;
+}
+#nav li{float:left;}
+#nav li a{
+    display: block;
+    border: 2px solid #bbb;
+    margin: 0 6px 10px 0;
+    border-radius: 5px;
+}
+#nav li a img{
+    width: 70px;
+}
+#window{
+    clear: both;
+}
+
+#nav li a.active{
+    border: 2px solid #fff;
+}
+</style>
+<body>
+    <div id="wrap">
+        <ul id="nav">
+            <li><a href="img (2)/lop0.jpg" class="active"><img src="img (2)/thumb0.jpg" alt="호1"></a></li>
+            <li><a href="img (2)/lop1.jpg"><img src="img (2)/thumb1.jpg" alt="호2"></a></li>
+            <li><a href="img (2)/lop2.jpg"><img src="img (2)/thumb2.jpg" alt="호3"></a></li>
+            <li><a href="img (2)/lop3.jpg"><img src="img (2)/thumb3.jpg" alt="호4"></a></li>
+            <li><a href="img (2)/lop4.jpg"><img src="img (2)/thumb4.jpg" alt="호5"></a></li>
+            <li><a href="img (2)/lop5.jpg"><img src="img (2)/thumb5.jpg" alt="호6"></a></li>
+            <li><a href="img (2)/lop6.jpg"><img src="img (2)/thumb6.jpg" alt="호7"></a></li>
+            <li><a href="img (2)/lop7.jpg"><img src="img (2)/thumb7.jpg" alt="호8"></a></li>
+        </ul>
+        <div id="window"><img src="img (2)/lop0.jpg" alt=""></div>
+    </div>
+</body>
+</html>
+<script>
+    const navLinks = document.querySelectorAll("#nav li a"); //8개등록
+    navLinks.forEach(function(navLink){
+        navLink.addEventListener("click",function(e){
+            e.preventDefault(); //a 이벤트를 막아서 이동금지
+            //작은 이미지 클릭시 팝업이동을 방지
+            let img_url = navLink.getAttribute('href'); //a의 주소값(큰이미지)
+            // alert(img_url);
+            document.querySelector("window img").setAttribute('src', img_url);
+             navLinks.forEach(function(link){
+                link.classList.remove("active"); //active를 모든 a 제거
+            });
+            navLink.classList.add("active");
+        });
+    });
+</script>

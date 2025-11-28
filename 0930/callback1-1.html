@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수안에 다른 함수 호출(콜백 함수)
+        var i = 0;
+        function delayMessage(){            
+            setInterval(function(){
+                console.log((i++) + "초가 지났습니다.");
+            },1000); //뒤에 1000은 1초 3000입력시 3초 후 실행
+        }
+        delayMessage()
+        // setTimeout은 1회만 실행
+        // setInterval은 원하는 시간마다 반복실행.
+    </script>
+</body>
+</html>

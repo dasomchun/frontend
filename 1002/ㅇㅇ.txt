@@ -1,0 +1,12 @@
+추석때 해야할일
+
+변수(var,let.const 차이)
+연산자 산술연산,비교연산
+제어문 if문 공부
+반복문 for문
+함수 
+내장함수 date 날짜 Math 수학 String 
+Dom공부 classList(remove,add)
+브라우저객체
+선택자 1001 선택자라는 폴더안에 있음.
+탭메뉴,슬라이드,아코디언

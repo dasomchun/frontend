@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .tab-buttons{
+      display: flex;
+    }
+    .tab-link{
+      width: 100px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    .tab-link.active{
+      border-color: black;
+      background-color: pink;
+      color: white;
+    }
+    .tab-content{
+      display: none;
+    }
+    .active2{
+      display: block;
+    }
+    </style>
+</head>
+<body>
+      <h2>탭 메뉴 예제</h2>
+
+  <!-- 탭 버튼 -->
+  <div class="tab-buttons">
+    <button class="tab-link active" data-tab="tab1"onclick="fruit('fruit1')">🍎 사과</button>
+    <button class="tab-link" data-tab="tab2"onclick="fruit('fruit2')">🍌 바나나</button>
+    <button class="tab-link" data-tab="tab3"onclick="fruit('fruit3')">🍇 포도</button>
+  </div>
+
+  <!-- 탭 내용 -->
+  <div id="tab1" class="tab-content active">
+    <p>사과는 빨갛고 달콤합니다.</p>
+  </div>
+  <div id="tab2" class="tab-content">
+    <p>바나나는 노랗고 길쭉합니다.</p>
+  </div>
+  <div id="tab3" class="tab-content"><p>포도는 보라색이고 송이로 열립니다.</p>
+    </div>
+</body>
+</html>
+<script>
+  function fruit(ftuitId){
+    const allTabs = document.querySelectorAll('.fruit');
+    const allContent = document.querySelectorAll('.tab-content');
+    allTabs.forEach(function(fruit){
+            tab.classList.remove('tab-link active');
+        });
+    allContent.forEach(function(content){
+          tab.classList.remove('tab-content active')
+    });
+    const selectedTab = document.getElementsByClassName("menu"+fruitId);
+        selectedTab.classList.add('tab-link active');
+        
+        const selectedContent = document.getElementsByClassName(fruitId);
+        selectedContent.classList.add('tab-content active');
+  }
+      
+</script>

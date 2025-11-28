@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+    ul, li{list-style: none;}
+    a{text-decoration: none; color: black;}
+    
+    #wrap{
+            width: 1000px;
+            height: 650px;
+        }
+    header{
+            width: 250px;
+            height:650px;
+            background-color: pink;
+            float: left;
+        } 
+    header .LOGO{
+          float: left;
+          margin-top: 20px;
+          margin-left: 75px;
+        }    
+    header .DS{
+            float: Left;
+            width: 200px;
+            height: 100px;
+            margin-top: 50px;
+        }
+    .DS>li{
+        float: left;
+    }
+    
+    .DS li{
+        border: 1px solid black;
+        box-sizing: border-box;
+         display: block;
+            width: 200px;
+            line-height: 50px;
+            text-align: center;
+            margin-left: 23px;
+    }
+#slider{
+            width: 750px;
+            height: 350px;
+            background-color: blue  ;
+        }
+#contents{
+            width: 750px;
+            height: 200px;
+            background-color: gray ;}
+     .footer div{float: left;}
+     
+
+
+    
+   
+    
+    
+    
+
+    
+
+</style>
+<body>
+    <div id="wrap">
+       <header>
+       <h1 class="LOGO">LOGO</h1>
+       
+       <ul class="DS">
+        <li><a href="#">MENU1</a></li>
+        <li><a href="#">MENU2</a></li>
+        <li><a href="#">MENU3</a></li>
+        <li><a href="#">MENU4</a></li>
+        </ul>
+    </header>
+    
+    <div id="slider">
+
+    </div>
+    <div id="contents">
+        <div class="notice_gallery"></div>
+        <div class="banner"></div>
+        <div class="shortcut"></div>
+    </div>
+    <footer>
+        <div class="f_logo"></div>
+        <div class="f_menu"></div>
+        <div class="f_copy"></div>
+
+    </footer>
+</body>
+</html>

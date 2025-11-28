@@ -1,0 +1,145 @@
+*{margin: 0; padding: 0;}
+ul li{list-style: none;}
+a{text-decoration: none;color: #000;
+}
+#wrap{
+   position: relative;
+   margin: 0 auto;
+   width: 100%;
+   height: 1000px;
+}
+#header{
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    border-top: 5px solid green;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 100px;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    margin-left: -100px;
+}
+.logo a{
+    display: block;
+    background: url(../img/sub1.jpg)no-repeat 0 0;
+    width: 202px;
+    height: 44px; 
+}
+
+#gnb{
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 115px;
+    position: absolute;
+    background-color: white;
+    /* border: 1px solid #333; */
+}
+
+#gnb > ul{
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
+}
+#gnb > ul > li{
+    float: left;
+}
+#gnb > ul > li >a{
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+#gnb ul li a:hover{
+    color: #009223;
+}
+
+#gnb ul li ul li{
+    width: 165px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    
+}
+
+#gnb ul li ul li a{
+    display: inline-block;
+    line-height:45px;
+    padding: 30px 15px;
+    font-size: 16px;
+    color: #666666;
+     
+}
+
+
+#gnb ul li ul{
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    
+}
+
+#gnb:hover ul li ul{
+    height: 325px;
+}
+
+.shadow{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid #999;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    z-index: 10;
+}
+#gnb:hover ul+.shadow{
+    height: 325px;
+    background-color: white;
+}
+#sec{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    top: 175px;
+}
+.sub{
+    position: absolute;
+    right: 370px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -60px;
+}
+.sub ul li{
+    text-align: center;
+    line-height: 75px;
+    list-style: none;
+    float: left;
+    width: 300px;
+    height: 75px;
+}
+
+
+.sub ul li:nth-child(1){
+    background: url(../img/dd1.jpg) no-repeat 25% 50%;
+    background-color: #FFCE32;
+    border-radius: 32px 0 0 0;
+}
+.sub  ul li:nth-child(2){
+    background: url(../img/dd2.jpg) no-repeat 13% 50%;
+    background-color: #009223;
+    border-radius: 0 0 32px 0;
+}
+.sub .men2{
+    color: white;
+}

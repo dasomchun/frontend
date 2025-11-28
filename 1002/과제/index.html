@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding:0;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+
+        header{
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #ccc;
+        }
+        #slider{
+            position: relative;
+            width: 1200px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }  
+        #slider ul{
+            width: 4800px;
+            height: 300px;
+        }
+        #slider ul li{
+            width: 1200px;
+            float: left;
+        }
+
+        #slider p a{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            top: 40%;
+        }
+
+        #slider p a.prev{
+            left: 20px;
+        }
+
+        #slider p a.next{
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div id="slider">
+        <ul id="slide">
+            <li><a href="#"><img src="images/slide1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/slide2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/slide3.jpg" alt=""></a></li>
+        </ul>
+        <p>
+            <a class="prev" href="#"><img src="images/prev_btn.png" alt=""></a>
+            <a class="next" href="#"><img src="images/next_btn.png" alt=""></a>
+        </p>
+    </div>
+</body>
+</html>
+<script>
+     let list = document.querySelector('#slide'); 
+        let listLi = document.querySelectorAll('#slide li'); 
+        let total = listLi.length; 
+        let li_width = document.querySelector('#slide>li').offsetWidth;
+        
+        for(let i = 0; i < 3; i++){
+            let copyObj = listLi[i].cloneNode(true);
+            list.append(copyObj); 
+        }
+         let num = 0;
+         document.querySelector('.next').addEventListener("click",function(e){
+            e.preventDefault();
+            
+            if(num === total ){
+                num = 0;
+                list.style.transition = "none";
+                list.style.marginLeft = 0;
+            }
+
+            setTimeout(function(){
+            num++;
+            list.style.transition = "margin-left 0.5s";
+            list.style.marginLeft = -li_width * num + "px"; 
+            },50);
+         });
+
+         document.querySelector('.prev').addEventListener("click",function(e){
+            e.preventDefault();
+            if(num === 0 ){
+                num = total;
+                list.style.transition = "none";
+                list.style.marginLeft = -li_width * num + "px"; 
+                
+            }
+            
+            setTimeout(function(){
+            num--;
+            list.style.transition = "margin-left 0.5s";
+            list.style.marginLeft = -li_width * num + "px"; 
+            },50);
+         });
+
+    function autoPlay(){
+        if(num === total ){
+                num = 0;
+                list.style.transition = "none";
+                list.style.marginLeft = 0;
+                
+            }
+
+            setTimeout(function(){
+            num++;
+            list.style.transition = "margin-left 0.5s";
+            list.style.marginLeft = -li_width * num + "px"; 
+            },50);
+    }
+    let frame = document.getElementById("slider");
+    let interVal = setInterval(autoPlay, 3000);
+
+    frame.addEventListener("mouseover",function(){
+        clearInterval(interVal); 
+    });
+     frame.addEventListener("mouseout",function(){
+        interVal = setInterval(autoPlay, 3000);
+    });
+</script>

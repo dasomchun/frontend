@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        height: 3000px;
+    }
+        .box1{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            border: 1px #333 solid;
+        }
+         .box2{
+            width: 150px;
+            height: 150px;
+            background-color: #25b640;
+            border: 1px #333 solid;
+        }
+        .box3{
+            width: 150px;
+            height: 150px;
+            background-color: #c8da06;
+            border: 1px #333 solid;
+            position: fixed;/* absolute만 적용시 박스4는 박스3 뒤에 숨어있다. */
+            bottom: 50px;
+            right: 50px;
+
+        }
+         .box4{
+            width: 200px;
+            height: 200px;
+            background-color: #ec1c1c;
+            border: 1px #333 solid;
+        }
+        /* absolute
+        기준위치가 브라우저 또는 relative로 정한 상자 자리감이 없다. */
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+
+</body>
+</html>
